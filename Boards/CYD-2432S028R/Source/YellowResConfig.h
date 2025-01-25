@@ -1,0 +1,26 @@
+#pragma once
+
+#include "driver/spi_common.h"
+#include "driver/i2c.h"
+#include "driver/gpio.h"
+#include "hal/YellowResDisplayConstants.h"
+
+// SPI 1 - touch
+#define YELLOW_RES_TOUCH_PIN_CS  GPIO_NUM_33
+#define YELLOW_RES_TOUCH_PIN_SCLK GPIO_NUM_25
+#define YELLOW_RES_TOUCH_PIN_MOSI GPIO_NUM_32
+#define YELLOW_RES_TOUCH_PIN_MISO GPIO_NUM_39
+#define YELLOW_RES_TOUCH_TRANSACTION_LIMIT 12
+
+// SPI 2 - display
+#define YELLOW_RES_DISP_PIN_CS  GPIO_NUM_15
+#define YELLOW_RES_DISP_PIN_SCLK GPIO_NUM_14
+#define YELLOW_RES_DISP_PIN_MOSI GPIO_NUM_13
+//#define YELLOW_RES_DISP_PIN_SDO GPIO_NUM_12
+#define YELLOW_RES_DISP_TRANSACTION_LIMIT YELLOW_RES_LCD_DRAW_BUFFER_SIZE
+
+// SPI 3 - sdcard
+#define YELLOW_RES_CARD_PIN_SCLK GPIO_NUM_18
+#define YELLOW_RES_CARD_PIN_MOSI GPIO_NUM_23
+#define YELLOW_RES_CARD_PIN_MISO GPIO_NUM_19
+#define YELLOW_RES_CARD_TRANSACTION_LIMIT 8192 // TODO: Determine proper limit

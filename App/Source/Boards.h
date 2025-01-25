@@ -10,6 +10,9 @@
 #elif defined(CONFIG_TT_BOARD_CYD_2432S024C)
 #include "CYD2432S024C.h"
 #define TT_BOARD_HARDWARE &cyd_2432S024c_config
+#elif defined(CONFIG_TT_BOARD_CYD_2432S028R)
+#include "CYD2432S028R.h"
+#define TT_BOARD_HARDWARE &cyd_2432S028r_config
 #elif defined(CONFIG_TT_BOARD_M5STACK_CORE2)
 #include "M5stackCore2.h"
 #define TT_BOARD_HARDWARE &m5stack_core2
